@@ -9,10 +9,12 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  color: #330C00;
 }
 main {
   flex: 1 0 auto;
 }
+
 .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -25,7 +27,7 @@ main {
 }
 @media #{$large-and-up} {
   .container {
-    width: 60%;
+    width: 70%;
   }
 }
 .no-margin {
@@ -101,3 +103,4 @@ footer.page-footer {
   line-height: 1.5;
   letter-spacing: -0.003em;
  }
+

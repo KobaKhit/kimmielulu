@@ -1,8 +1,14 @@
 ---
 layout: page
-title: About
+title: About Us
 permalink: /about/
 ---
 
-Hello World! 
-Welcome to jekyll-materialize
+Serving the DE area ~ Specialty Cakes, Cakepops, Cupcakes, etc!
+Email ?'s & orders to:
+
+KimmieLulusConfections@gmail.com
+
+302-685-0863
+
+302-668-9830

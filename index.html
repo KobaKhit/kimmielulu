@@ -1,64 +1,54 @@
 ---
 layout: default
 ---
+
 <div class="container">
-    <div class="group-article">
-        <div class="row no-margin">
-            <div class="col s12">
-                <h2 class="blue-text center-align thin">Recent Post</h2>
-                <div class="divider"></div>
-            </div>
-        </div>
-        
-        {% for post in paginator.posts %}
-        <div class="row no-margin">
-            <a class="waves-effect" href="{{ post.url | prepend: site.baseurl }}">
-                <div class="col s12">
-                    <div class="list-article">
-                        <h4 class="blue-text thin">{{ post.title }}</h4>
-                        <p class="grey-text text-darken-1 light">Published at {{ post.date | date: "%B %-d, %Y" }}.</p>
-                        <article class="grey-text text-darken-2 post-content on-index light">
-                                {{ post.excerpt | strip_html }}. . 
-                        </article>
-                        <br/>
-                    </div>
-                    <div class="divider dashed"></div>
-                </div>
-            </a>
-        </div>
-        {% endfor %}
 
-    </div>
+	<!-- Page Content goes here -->
+	<div class = "row">
+		  
+		<div class="carousel">
+		    <a class="carousel-item" href="#one!"><img src="/assets/img/cake.jpg"></a>
+		    <a class="carousel-item" href="#two!"><img src="/assets/img/cake2.jpg"></a>
+		    <a class="carousel-item" href="#three!"><img src="/assets/img/cake3.jpg"></a>
+		    <a class="carousel-item" href="#three!"><img src="/assets/img/cake4.jpg"></a>
+		    <a class="carousel-item" href="#three!"><img src="/assets/img/cake5.jpg"></a>
+		  </div>  
+	</div>
 
-    <div class="section">
+	<div class = "divider"></div>
 
-        {% if paginator.total_pages > 1 %}
-            <ul class="pagination center-align">
+	<div class = "row">
+		<div class="col s6">
+        <!-- Grey navigation panel -->
+         <blockquote cite="kimmielulu">
+         <h3>You want it we bake it!</h3>
+		</blockquote> 
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
 
-                {% if paginator.previous_page %}
-                    <li class="waves-effect blue lighten-2"><a class="white-text" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
-                {% else %}
-                    <li class="waves-effect disabled blue lighten-2"><a class="white-text" href="#">&laquo; Prev</a></li>
-                {% endif %}
+      <div class="col s4 offset-s2">
+        <!-- Teal page content  -->
+        <h3 class = "center"><i class="fa fa-heart-o" aria-hidden="true" style = "color:pink;"></i> Testimonials <i class="fa fa-heart-o" aria-hidden="true" style = "color:pink;"></i>
+		</h3>
 
-                {% for page in (1..paginator.total_pages) %}
-                    {% if page == paginator.page %}
-                        <li class="waves-effect active blue"><a href="#">{{ page }}</a></li>
-                    {% elsif page == 1 %}
-                        <li class="waves-effect blue lighten-2"><a class="white-text" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
-                    {% else %}
-                        <li class="waves-effect blue lighten-2"><a class="white-text" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-                    {% endif %}
-                {% endfor %}
+        <p>Amazing customer service. They offer full customization of the cake. Loved it!</p>
+        <div class="chip">
+			<a href = "http://www.kobakhit.com/"><img src = "/assets/img/testimony1.jpg" class="circle responsive-img"/>
+			Koba Khitalishvili
+			</a>
+		</div>
 
-                {% if paginator.next_page %}
-                    <li class="waves-effect blue lighten-2"><a class="white-text" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
-                {% else %}
-                    <li class="waves-effect disabled blue lighten-2"><a class="white-text" href="#">Next &raquo;</a></li>
-                {% endif %}
+		<br>
+		<p>I ordered 20 plus cupcakes and they were able to deliver in time. The cupcakes were hella tasty too. I will be back.</p>
+        <div class="chip">
+			<a href = "http://www.owk.co/"><img src = "/assets/img/testimony2.jpg" class="circle responsive-img"/>
+			James Owk
+			</a>
+		</div>
 
-            </ul>
-        {% endif %}
+      </div>
+	</div>
 
-    </div>
 </div>
+

@@ -1,28 +1,28 @@
 # Site settings
-title: Jekyll-materialize
+title: Kimmie Lulu's Confections
 description: > # this means to ignore newlines until "baseurl:"
     Write an awesome description for your new site here. You can edit this
     line in _config.yml. It will appear in your document head meta (for
     Google search results) and in your feed.xml site description.
 url: "http://yourdomain.com"
 baseurl: ""
-logo: jekyll-<b>materialize</b>
+logo: Kimmie Lulu's <b>Confections</b>
 paginate: 5
 paginate_path: "/page:num/"
 owner:
-    email: ichihara.rifa@gmail.com
+    email: KimmieLulusConfections@gmail.com
     facebook:
         show: true
-        name: "Ichihara Rifa"
-        url: "https://fb.me/nasya.aidan"
+        name: "Kimmie Lulu's Confections"
+        url: "https://www.facebook.com/kimmielulusconfections/"
     github:
         show: true
-        username: "riefachan"
+        username: "kobakhit"
     twitter:
         show: false
         username: ""
     disqus:
-        show: true
+        show: false
         username: "ichihararifa"
 sass:
     sass_dir: _sass
@@ -30,5 +30,4 @@ sass:
 permalink: "/article/:title"
 markdown: redcarpet
 highlighter: pygments
-gems:
-    - jekyll-feed
+gems: [jekyll-paginate, jekyll-feed]

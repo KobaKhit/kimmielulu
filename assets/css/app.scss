@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   color: #330C00;
+  font-size:18px;
 }
 main {
   flex: 1 0 auto;
@@ -97,10 +98,28 @@ article {
   padding: 20px;
 }
 footer.page-footer {
-  font-weight: 400;
+  font-weight: 350;
   font-style: normal;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 1.5;
   letter-spacing: -0.003em;
  }
 
+ #category-list a {
+  background-color: #F06292;
+  color: #F5F5DC;
+  text-decoration: none;
+ }
+
+.large-text {
+  font-size: 24px;
+}
+
+.a-nocol {
+  text-decoration: none;
+  color: inherit;
+ }
+
+.list-inline li {
+  display:inline-block;
+}

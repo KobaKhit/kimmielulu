@@ -1,0 +1,13 @@
+---
+layout: page
+title: Other
+permalink: /other/
+---
+
+<ul class = "list-inline">
+{% for member in site.data.misc %}
+  <li>
+    <img class = "materialboxed" src = "{{ member.path }}" width = "275"/>
+  </li>
+{% endfor %}
+</ul>

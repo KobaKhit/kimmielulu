@@ -1,0 +1,13 @@
+---
+layout: page
+title: Wedding Cakes
+permalink: /wedding-cakes/
+---
+
+<ul class = "list-inline">
+{% for member in site.data.wedding-cakes %}
+  <li>
+    <img class = "materialboxed" src = "{{ member.path }}" width = "275"/>
+  </li>
+{% endfor %}
+</ul>

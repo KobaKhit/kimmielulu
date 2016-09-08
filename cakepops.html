@@ -1,0 +1,13 @@
+---
+layout: page
+title: Cakepops
+permalink: /cakepops/
+---
+
+<ul class = "list-inline">
+{% for member in site.data.cakepops %}
+  <li>
+    <img class = "materialboxed" src = "{{ member.path }}" width = "275"/>
+  </li>
+{% endfor %}
+</ul>
